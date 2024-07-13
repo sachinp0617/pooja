@@ -1,0 +1,14 @@
+pipline {
+    agent any
+    environment {
+        VAR=varaible1
+    }
+    stages{
+        stage{
+            steps{
+                sh "echo " env.${VAR}"
+            }
+
+        }
+    }
+}
