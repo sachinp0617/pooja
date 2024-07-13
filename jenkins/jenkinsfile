@@ -1,5 +1,7 @@
 pipline {
-    agent any
+    agent {
+        label "test_agent"
+    }
     environment {
         VAR=varaible1
     }
@@ -7,6 +9,7 @@ pipline {
         stage{
             steps{
                 sh "echo " env.${VAR}"
+                sh "echo "dnlksnvlvkn"
             }
 
         }
